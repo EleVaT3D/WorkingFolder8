@@ -1,34 +1,50 @@
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
 .background{
-    width: 100%;
-    height: 100%;
-    background-image: url(stars.png);
     position: relative;
+    z-index: 1;
+    transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+	transition-delay: 0.3s;
+}
+.background:hover{
+    color: green;
+
 }
 .greenbox{
-    height: 50px;
-    width: 50px;
-    background-color: blue;
+    height: 60px;
+    width: 60px;
+    top: 10px;
+    background-color: green;
     transform: translate(600px, 300px) rotate(45deg) rotate(360deg) scale(5);
     transition: 3s transform;
     position: absolute;
+    border-radius: 25%;
+    z-index: 2;
 }
 .yellowbox{
     height: 50px;
     width: 50px;
+    top: 10px;
     background-color: yellow;
     transform: translate(600px, 300px) rotate(45deg) rotate(360deg) scale(4);
     transition: 3s transform;
     position: absolute;
+    z-index: 2;
 }
 .purplebox{
     height: 50px;
     width: 50px;
-    background-color: black;
+    top: 10px;
+    background-color: purple;
     transform: translate(600px, 300px) rotate(45deg) rotate(360deg) scale(3);
     transition: 3s transform;
     border-radius: 50px;
     position: absolute;
-}
-@keyframes{
-
+    animation: animate;
+    z-index: 2;
 }

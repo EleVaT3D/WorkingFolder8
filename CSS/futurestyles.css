@@ -1,0 +1,121 @@
+/* STATIC */
+body, html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.mainbox{
+    width: 100%;
+    height: 100%;
+}
+.background{
+    position: relative;
+    z-index: 1;
+}
+.starsimage{
+    width: 100%;
+    z-index: 1;
+
+}
+.road{
+    position: absolute;
+    bottom: -5px;
+    width: 2000px;
+    z-index: 2;
+}
+.roadpic{
+    width:67.5%;
+}
+
+/* MOVING PARTS */
+.car{
+    position: absolute;
+    bottom: 210px;
+    left: 1000px;
+    z-index: 3;
+    transform: translate(-900px);
+    transition-property: all;
+	transition-duration: 1.5s;
+	transition-timing-function: linear;
+    transition-delay: 0.7s;
+    animation: carfade 2.2s linear;
+
+}
+.carpic{
+    width: 70%;
+}
+.flame{
+    position: absolute;
+    bottom: 210px;
+    left: 1200px;
+    z-index: 3;
+    transform: translate(-900px);
+    transition-property: all;
+	transition-duration: 1.5s;
+	transition-timing-function: linear;
+    transition-delay: 0.7s;
+    animation: flamingtire 2s linear;
+}
+.flamepic{
+    width: 70%;
+}
+.blackhole{
+    height: 50px;
+    width: 50px;
+    bottom: 210px;
+    left: 100px;
+    border-radius: 50%;
+    background-color: black;
+    transform: scale(3.5);
+    transition: 2.7s transform;
+    position: absolute;
+    z-index: 3;
+}
+.flamingroad{
+    position: absolute;
+    bottom: 170px;
+    left: 300px;
+    z-index: 3;
+    animation: trackfadein 2.7s linear;
+}
+.flamingroadpic{
+    width: 90%;
+}
+
+/* ANIMATIONS */
+
+@keyframes flamingtire {
+    0% {opacity: 0 }
+    25% {opacity: 0.15}
+    50% {opacity: 0.2 }
+    70% {opacity: 0.7}
+    90% {opacity: 1}
+    100% {opacity: 0}
+  }
+  @keyframes carfade {
+    0% { opacity: 1 }
+    25% {opacity: 1}
+    50% { opacity: 1}
+    70% {opacity: 1}
+    100% {opacity: 0}
+  }
+  @keyframes trackfadein {
+    0% { opacity: 0 }
+    25% {opacity: 0}
+    50% { opacity: 0}
+    70% {opacity: 0}
+    90 {opacity: 0}
+    100% {opacity: 1}
+  }
+
+
+
+
+
+
+  /* @keyframes tireflame {
+    0% {left: 1200px; opacity: 0 }
+    25% {left: 975px; opacity: 0.15}
+    50% {left: 750px; opacity: 0.2 }
+    70% {left: 525px; opacity: 0.7}
+    100% {left: 300px ; opacity: 1} */
