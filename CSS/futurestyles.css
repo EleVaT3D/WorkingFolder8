@@ -1,4 +1,6 @@
-/* STATIC */
+/* STATIC*/ 
+
+*/
 body, html{
     width: 100%;
     height: 100%;
@@ -6,7 +8,7 @@ body, html{
 }
 .mainbox{
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 .background{
     position: relative;
@@ -20,7 +22,7 @@ body, html{
 .road{
     position: absolute;
     bottom: -5px;
-    width: 2000px;
+    width: 150%;
     z-index: 2;
 }
 .roadpic{
@@ -28,17 +30,20 @@ body, html{
 }
 
 /* MOVING PARTS */
+
+
+
 .car{
     position: absolute;
-    bottom: 210px;
+    bottom: 32%;
     left: 1000px;
     z-index: 3;
     transform: translate(-1500px);
     transition-property: all;
-	transition-duration: 1.5s;
+	transition-duration: 2.3s;
 	transition-timing-function: linear;
     transition-delay: 0.7s;
-    animation: carfade 2.2s linear;
+    animation: carfade 2.7s linear;
 
 }
 .carpic{
@@ -46,52 +51,89 @@ body, html{
 }
 .flame{
     position: absolute;
-    bottom: 210px;
+    bottom: 32%;
     left: 1200px;
     z-index: 3;
     transform: translate(-1500px);
     transition-property: all;
-	transition-duration: 1.5s;
+	transition-duration: 2.3s;
 	transition-timing-function: linear;
     transition-delay: 0.7s;
-    animation: flamingtire 2s linear;
+    animation: flamingtire 2.7s linear infinite;
 }
+
+
+/*#flame{
+    animation: flamingtiremove 2s linear infinite;
+    animation-delay: 0.7s;
+}*/
+
 .flamepic{
-    width: 70%;
+    width: 65%;
 }
+
+
+/*STATIC FADE/EXPAND*/
+
 .blackhole{
     height: 50px;
     width: 50px;
-    bottom: 210px;
+    bottom: 32%;
     left: 100px;
     border-radius: 50%;
     background-color: black;
-    transform: scale(6);
-    transition: 2.7s transform;
+/*    transform: scale(6);
+    transition: 2.7s transform;*/
+/*    transform: scale(0);
+    transition: 2s transform;*/
+    animation: blackhole 3s linear infinite;
     position: absolute;
     z-index: 3;
 }
+.electric{
+    position: absolute;
+    bottom: 0%;
+    left: -8%;
+    animation: trackfadein 3s linear infinite;
+    z-index: 4;
+}
+.electricpic{
+    width: 50%;
+}
+
+
 .flamingroad{
     position: absolute;
-    bottom: 170px;
+    bottom: 25%;
     left: 300px;
     z-index: 3;
-    animation: trackfadein 2.7s linear;
+    animation: trackfadein 3s linear infinite;
 }
 .flamingroadpic{
-    width: 90%;
+    width: 75%;
 }
 
 /* ANIMATIONS */
 
 @keyframes flamingtire {
     0% {opacity: 0 }
-    25% {opacity: 0.15}
-    50% {opacity: 0.2 }
+    25% {opacity: 0.7}
+    50% {opacity: 0.1 }
     70% {opacity: 0.7}
     90% {opacity: 1}
     100% {opacity: 0}
   }
+
+
+/*@keyframes flamingtiremove{
+    100%{
+        transform: translate(-1500px);
+    }
+}*/
+
+
+
+
   @keyframes carfade {
     0% { opacity: 1 }
     25% {opacity: 1}
@@ -99,15 +141,25 @@ body, html{
     70% {opacity: 1}
     100% {opacity: 0}
   }
+
+
+
   @keyframes trackfadein {
     0% { opacity: 0 }
     25% {opacity: 0}
     50% { opacity: 0}
     70% {opacity: 0}
-    90 {opacity: 0}
+    90% {opacity: 0.9}
     100% {opacity: 1}
   }
 
+
+
+  @keyframes blackhole{
+    100%{
+        transform: scale(6)
+    }
+  }
 
 
 
@@ -118,4 +170,4 @@ body, html{
     25% {left: 975px; opacity: 0.15}
     50% {left: 750px; opacity: 0.2 }
     70% {left: 525px; opacity: 0.7}
-    100% {left: 300px ; opacity: 1} */
+    100% {left: 300px ; opacity: 1} 
