@@ -1,5 +1,6 @@
 /* STATIC*/ 
 
+
 */
 body, html{
     width: 100%;
@@ -38,8 +39,8 @@ body, html{
     bottom: 32%;
     left: 1000px;
     z-index: 3;
-    animation: carmove 2.3s linear infinite;
-    animation-delay: 0.7s;
+    animation: carmove 3s linear infinite;
+/*    animation-delay: 1s;*/
 
 
 /*    transform: translate(-1500px);
@@ -58,8 +59,8 @@ body, html{
     bottom: 32%;
     left: 1200px;
     z-index: 3;
-    animation: flamingtiremove 2.3s linear infinite;
-    animation-delay: 0.7s;
+    animation: flamingtiremove 3s linear infinite;
+  /*  animation-delay: 1s;*/
 
 
 
