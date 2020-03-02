@@ -43,7 +43,7 @@ body, html{
 	transition-duration: 2.3s;
 	transition-timing-function: linear;
     transition-delay: 0.7s;
-    animation: carfade 2.7s linear;
+    animation: FADE-car 2.7s linear;
 
 }
 .carpic{
@@ -54,12 +54,14 @@ body, html{
     bottom: 32%;
     left: 1200px;
     z-index: 3;
+/*    animation: flamingtiremove 2.3s linear infinite;
+    animation-delay: 0.7s;*/
     transform: translate(-1500px);
     transition-property: all;
 	transition-duration: 2.3s;
 	transition-timing-function: linear;
     transition-delay: 0.7s;
-    animation: flamingtire 2.7s linear infinite;
+    animation: FADE-flamingtire 2.7s linear infinite;
 }
 
 
@@ -82,10 +84,6 @@ body, html{
     left: 100px;
     border-radius: 50%;
     background-color: black;
-/*    transform: scale(6);
-    transition: 2.7s transform;*/
-/*    transform: scale(0);
-    transition: 2s transform;*/
     animation: blackhole 3s linear infinite;
     position: absolute;
     z-index: 3;
@@ -115,7 +113,7 @@ body, html{
 
 /* ANIMATIONS */
 
-@keyframes flamingtire {
+@keyframes FADE-flamingtire {
     0% {opacity: 0 }
     25% {opacity: 0.7}
     50% {opacity: 0.1 }
@@ -134,13 +132,13 @@ body, html{
 
 
 
-  @keyframes carfade {
+/*  @keyframes FADE-car {
     0% { opacity: 1 }
     25% {opacity: 1}
     50% { opacity: 1}
     70% {opacity: 1}
     100% {opacity: 0}
-  }
+  }*/
 
 
 
