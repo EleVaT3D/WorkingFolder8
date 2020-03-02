@@ -33,7 +33,7 @@ body, html{
     bottom: 210px;
     left: 1000px;
     z-index: 3;
-    transform: translate(-900px);
+    transform: translate(-1500px);
     transition-property: all;
 	transition-duration: 1.5s;
 	transition-timing-function: linear;
@@ -49,7 +49,7 @@ body, html{
     bottom: 210px;
     left: 1200px;
     z-index: 3;
-    transform: translate(-900px);
+    transform: translate(-1500px);
     transition-property: all;
 	transition-duration: 1.5s;
 	transition-timing-function: linear;
@@ -66,7 +66,7 @@ body, html{
     left: 100px;
     border-radius: 50%;
     background-color: black;
-    transform: scale(3.5);
+    transform: scale(6);
     transition: 2.7s transform;
     position: absolute;
     z-index: 3;
