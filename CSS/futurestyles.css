@@ -142,6 +142,17 @@ body, html{
 .martypic{
     width: 30%;
 }
+.board{
+    position: absolute;
+    z-index: 4;
+    bottom: 32%;
+    left: 100px;
+    animation: boardmove 3s linear infinite;
+}
+.boardpic{
+    width: 7%;
+}
+
 
 
 /* ANIMATIONS */
@@ -167,7 +178,7 @@ body, html{
 @keyframes martymove{
     0% {transform: translate(-240px, 0px); opacity: 1}
     25% {transform: translate(-480px, 0px); opacity: 1}
-    50% {transform: translate(-720px, 50px); opacity: 0.85}
+    50% {transform: translate(-720px, 50px); opacity: 0.6}
     75% {transform: translate(-960px, 70px); opacity: 0}
     100% {transform: translate(-1200px, 90px); opacity: 0}
 }
@@ -185,7 +196,13 @@ body, html{
     75% {transform: translate(-960px); opacity: 0}
     100% {transform: translate(-1200px); opacity: 0}
 }
-
+@keyframes boardmove{
+    0% {transform: translate(0px, 0px); opacity: 0}
+    25% {transform: translate(0px, 0px); opacity: 0}
+    50% {transform: translate(0px, 0px); opacity: 0}
+    100% {transform: rotate(65deg) translate(100px, 80px); opacity: 1}
+/*    100% {transform: rotate(-30deg) translate(110px, 95px); opacity: 1}*/
+}
 
 
 
