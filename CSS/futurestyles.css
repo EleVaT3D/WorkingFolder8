@@ -121,7 +121,39 @@ body, html{
     width: 75%;
 }
 
+.logo{
+    position: absolute;
+    z-index: 4;
+    top: 15%;
+    left: 70%;
+    animation: logoanimate 3s linear infinite;
+}
+.logopic{
+    width: 50%;
+}
+
+.marty{
+    position: absolute;
+    z-index: 4;
+    top: 25%;
+    left: 1000px;
+    animation: martymove 3s linear infinite;
+}
+.martypic{
+    width: 30%;
+}
+
+
 /* ANIMATIONS */
+
+@keyframes logoanimate {
+    100%{
+        transform: translate(-80% );
+
+    }
+}
+
+
 
 /*@keyframes FADE-flamingtire {
     0% {opacity: 0 }
@@ -132,16 +164,26 @@ body, html{
     100% {opacity: 0}
   }*/
 
-
+@keyframes martymove{
+    0% {transform: translate(-240px, 0px); opacity: 1}
+    25% {transform: translate(-480px, 0px); opacity: 1}
+    50% {transform: translate(-720px, 50px); opacity: 0.85}
+    75% {transform: translate(-960px, 70px); opacity: 0}
+    100% {transform: translate(-1200px, 90px); opacity: 0}
+}
 @keyframes flamingtiremove{
-    100%{
-        transform: translate(-1200px);
-    }
+    0% {transform: translate(-240px); opacity: 0}
+    25% {transform: translate(-480px); opacity: 0.7}
+    50% {transform: translate(-720px); opacity: 0.1}
+    75% {transform: translate(-960px); opacity: 0.7}
+    100% {transform: translate(-1200px); opacity: 1}
 }
 @keyframes carmove{
-    100%{
-        transform: translate(-1200px);
-    }
+    0% {transform: translate(-240px); opacity: 1}
+    25% {transform: translate(-480px); opacity: 1}
+    50% {transform: translate(-720px); opacity: 0.85}
+    75% {transform: translate(-960px); opacity: 0}
+    100% {transform: translate(-1200px); opacity: 0}
 }
 
 
